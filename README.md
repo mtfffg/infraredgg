@@ -10,6 +10,7 @@ infrared logo on left siide
 youtube link
 discord link
 vods link
+reddit link
 
 
 BODY:
