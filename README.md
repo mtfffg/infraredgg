@@ -9,9 +9,9 @@ infrared gradient background color
 infrared logo on left siide
 youtube link
 discord link
-vods link
+twitter link
+twitch vods link
 reddit link
-
 
 BODY:
 dark background color
