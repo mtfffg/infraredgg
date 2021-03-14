@@ -48,7 +48,7 @@
 </head>
 <body>
     <div class="linkheader">
-        <a class="linkheaderdiv maincolorButton" style="margin-bottom:15%;" onclick="location.reload();">
+        <a class="linkheaderdiv maincolorButton" onclick="location.reload();">
             <div>
                 <img class="logogif" src="globe.gif" />
                 <br />
@@ -109,7 +109,7 @@
         </div>
     </div>
     <div class="bodyContainer">        
-        <div class="bodyDiv">
+        <div class="bodyDiv" id="twitterDiv">
             <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/ShowInfrared?ref_src=twsrc%5Etfw">Tweets by ShowInfrared</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -121,13 +121,13 @@
         </div>-->
         </div>
         <div class="bodyDiv">
-            <div style="padding: 56.25% 0px 0px; position: absolute; left:25%; top:0; display:block; width:75%; height:0;">
-                <iframe src="https://player.twitch.tv/?autoplay=false&channel=infraredshow&parent=www.infrared.gg"
+            <div class="viddiv" style="padding: 56.25% 0px 0px; position: absolute; top:0; display:block; height:0;">
+                <iframe id="twitchframe" src="https://player.twitch.tv/?autoplay=false&channel=infraredshow&parent=www.infrared.gg"
                         frameborder="0" allow="accelerometer; autoplay; muted; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="auto" autoplay muted
-                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 50%;"></iframe>
+                        style="position: absolute; top: 0px; left: 0px; width: 100%;"></iframe>
             </div>
         </div>
-        <div class="bodyDiv" style="position:absolute; height:2000vh; width:75%; left:25%; top: 50vh; text-align:left;">
+        <div class="bodyDiv viddiv ytdiv" style="position:absolute; height:2000vh; text-align:left;">
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xYD3h-j9l0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7gG6zzHy48w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/pbu-AAlqDJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -145,5 +145,5 @@
 
 <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="bootstrap.min.js"></script>
-<script type="text/javascript" src="home.js"></script>
+<script type="text/javascript" src="home.js?v=1"></script>
 <!--<script src='https://redditjs.com/subreddit.js' data-subreddit='showinfrared' data-height='400' data-width='330' data-sort='hot' data-theme='dark' data-subreddit-mode='small'></script>-->

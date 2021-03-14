@@ -14,7 +14,6 @@ body {
     /*    font-family: Arial;
     text-transform: uppercase;
     letter-spacing: .1em;*/
-   
     /*   background-color: rgb(32, 32, 32);
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 10px 10px, 10px 10px, 10px 5px;
@@ -81,7 +80,7 @@ body {
 }
 
     .colorButton:hover {
-        background-image: linear-gradient(150deg, #AE111B, #FBC22D, #3c49bd);        
+        background-image: linear-gradient(150deg, #AE111B, #FBC22D, #3c49bd);
         background-size: 100%;
         background-repeat: repeat;
         -webkit-background-clip: text;
@@ -124,6 +123,8 @@ body {
     /* Activate hardware acceleration for smoother animations */
     -webkit-transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
+
+    margin-bottom:15%;
 }
 
 /* Animate Background Image */
@@ -144,7 +145,7 @@ body {
 
 .mainLabel {
     font-size: 3vh;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .subLabel {
@@ -154,7 +155,7 @@ body {
 
 .bodyDiv {
     width: 25%;
-    text-align:center;
+    text-align: center;
 }
 
 .youtubevod {
@@ -167,4 +168,95 @@ iframe {
     width: 100%;
 }
 
+.viddiv {
+    left: 25%;
+    width: 75%;
+}
 
+#twitchframe {
+    height: 50%;
+}
+
+.ytdiv {
+    top: 50vh;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    #twitterDiv {
+        display: none;
+    }
+
+    .viddiv {
+        width: 100%;
+        left: 10%;
+    }
+
+    .linkheader {
+        width: 20%;
+    }
+
+    .mainLabel {
+        font-size: 1.8vh;
+    }
+
+    #twitchframe {
+        height: 100%;
+    }
+
+    .youtubevod {
+        height: 30vh;
+    }
+
+    .ytdiv {
+        top: 30vh;
+    }
+
+    .linkheaderdiv {
+        margin-bottom: 40%;
+    }
+
+    .maincolorButton{
+        margin-bottom:40%;
+    }
+}
+
+@media only screen and (max-device-height: 480px) {
+    #twitterDiv {
+        display: none;
+    }
+
+    .viddiv {
+        width: 100%;
+        left: 10%;
+    }
+
+    .linkheader {
+        width: 20%;
+    }
+
+    .mainLabel {
+        font-size: 1.8vh;
+    }
+
+    #twitchframe {
+        height: 100%;
+    }
+
+    .youtubevod {
+        height: 30vh;
+    }
+
+    .ytdiv {
+        top: 90vh;
+    }
+
+    .linkheaderdiv {
+        margin-bottom: 15%;     
+    }
+
+    .subheader {
+        width: 45%;
+        display: inline-block;
+    }
+}
