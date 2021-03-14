@@ -1,0 +1,96 @@
+﻿body {
+    background-color: #444;
+}
+
+.linkheader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 13%;
+    height: 100%;
+    text-align: center;
+    box-shadow: inset 0px 0px 40px 40px #222;
+    perspective: 1000px;
+}
+
+.bodyContainer {
+    position: absolute;
+    left: 13%;
+    top: 0;
+    width: 87%;
+    background-color: transparent;
+}
+
+.linkheaderdiv {
+    margin-bottom: 10%;
+    transform: rotate3d(-40, 100, 0, 10deg)
+}
+
+.linkscollection {
+    display: none;
+}
+
+.subheader {
+    /* border-bottom: 5px solid #AE111B;    */
+}
+
+.logogif {
+    width: 75%;
+}
+
+.headerlinklogo {
+    width: 30%;
+}
+
+.colorButton {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .25em;
+    cursor: pointer;
+    transition: background .8s ease;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+    .colorButton:hover {
+        background-image: linear-gradient(150deg, #AE111B, #FBC22D, #3c49bd);        
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        transition: all 0.4s ease 0s;
+    }
+
+.mainLabel {
+    font-size: 3vh;
+}
+
+.subLabel {
+    font-size: 1.8vh;
+}
+
+.bodyDiv {
+    width: 25%;
+    text-align:center;
+}
+
+.youtubevod {
+    width: 75%;
+    height: 50vh;
+    display: inline-block;
+}
+
+iframe {
+    width: 100%;
+}
