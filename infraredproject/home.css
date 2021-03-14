@@ -1,5 +1,24 @@
-﻿body {
+﻿@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('gotham_black_regular-webfont.woff2') format('woff2'), url('gotham_black_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
     background-color: #444;
+    background-image: url(charcoalbg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: gotham_blackregular;
+    /*    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: .1em;*/
+   
+    /*   background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;*/
 }
 
 .linkheader {
