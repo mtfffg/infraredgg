@@ -91,12 +91,65 @@ body {
         transition: all 0.4s ease 0s;
     }
 
+.maincolorButton {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .25em;
+    cursor: pointer;
+    transition: background .8s ease;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #AE111B, #FBC22D, #3c49bd);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 0.4s ease 0s;
+    background: url(http://static.colourlovers.com/uploads/images/4/44/44982.pic.jpg) repeat-y;
+    -webkit-background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 10s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: -200% 50%;
+    }
+
+    100% {
+        background-position: 250% 50%;
+    }
+
+    0% {
+        background-position: -100% 50%;
+    }
+}
+
 .mainLabel {
     font-size: 3vh;
+    cursor:pointer;
 }
 
 .subLabel {
     font-size: 1.8vh;
+    cursor: pointer;
 }
 
 .bodyDiv {
@@ -105,7 +158,7 @@ body {
 }
 
 .youtubevod {
-    width: 75%;
+    width: 100%;
     height: 50vh;
     display: inline-block;
 }
@@ -113,3 +166,5 @@ body {
 iframe {
     width: 100%;
 }
+
+
