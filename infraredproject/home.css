@@ -189,6 +189,7 @@ iframe {
 #twitterDiv{
     position:absolute;
     top:60vh;
+    z-index:1;
 }
 
 
