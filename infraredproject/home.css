@@ -173,12 +173,22 @@ iframe {
     width: 75%;
 }
 
+.twitchdiv{
+    left:0;
+    width:100%;
+}
+
 #twitchframe {
-    height: 50%;
+    height: 60%;
 }
 
 .ytdiv {
-    top: 50vh;
+    top: 60vh;
+}
+
+#twitterDiv{
+    position:absolute;
+    top:60vh;
 }
 
 
@@ -223,6 +233,11 @@ iframe {
     .maincolorButton{
         margin-bottom:40%;
     }
+
+    .twitchdiv {
+        width: 100%;
+        left: 10%;
+    }
 }
 
 @media only screen and (max-device-height: 480px) {
@@ -262,5 +277,10 @@ iframe {
     .subheader {
         width: 45%;
         display: inline-block;
+    }
+
+    .twitchdiv {
+        width: 100%;
+        left: 10%;
     }
 }
