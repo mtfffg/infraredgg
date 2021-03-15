@@ -3,11 +3,5 @@ youtube live feed
 youtube videos
 
 
-fix mobile
-make infrared title always infrared color and animated
-
-
-
-
-
-
+calendar for debates and schedule
+apointment form for debates

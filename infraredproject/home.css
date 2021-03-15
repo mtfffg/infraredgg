@@ -170,7 +170,7 @@ iframe {
 
 .viddiv {
     left: 25%;
-    width: 75%;
+    width: 75%;    
 }
 
 .twitchdiv{
@@ -187,11 +187,45 @@ iframe {
 }
 
 #twitterDiv{
+    width:25%;
     position:absolute;
     top:60vh;
     z-index:1;
 }
 
+.debateDiv {
+    position: absolute;
+    top: 60vh;
+    z-index: 1;
+    left: 20%;
+    width: 20%;
+    background-color: rgba(0,0,0,.5);
+    display:none;
+    /*  background-image: url(charcoalbg.png);
+    background-repeat: repeat;
+    background-size: contain;*/
+}
+
+.debatebox{
+    width:100%;
+    position:relative;
+}
+
+.debateimg{
+    width:75%;
+}
+
+.debatename{
+    width:100%;
+    font-size:3vh !important;
+}
+
+.defeated {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+}
 
 @media only screen and (max-device-width: 480px) {
     #twitterDiv {
