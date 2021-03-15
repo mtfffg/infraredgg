@@ -1,0 +1,321 @@
+﻿@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('gotham_black_regular-webfont.woff2') format('woff2'), url('gotham_black_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #444;
+    background-image: url(4kbg.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: gotham_blackregular;
+    /*    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: .1em;*/
+    /*   background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;*/
+}
+
+.linkheader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 13%;
+    height: 100%;
+    text-align: center;
+    box-shadow: inset 0px 0px 40px 40px #222;
+    perspective: 1000px;
+}
+
+.bodyContainer {
+    position: absolute;
+    left: 13%;
+    top: 0;
+    width: 87%;
+    background-color: transparent;
+}
+
+.linkheaderdiv {
+    margin-bottom: 10%;
+    transform: rotate3d(-40, 100, 0, 10deg)
+}
+
+.linkscollection {
+    /*display: none;*/
+}
+
+.subheader {
+    /* border-bottom: 5px solid #AE111B;    */
+}
+
+.logogif {
+    width: 75%;
+}
+
+.headerlinklogo {
+    width: 30%;
+}
+
+.colorButton {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .25em;
+    cursor: pointer;
+    transition: background .8s ease;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+    .colorButton:hover {
+        background-image: linear-gradient(150deg, #AE111B, #FBC22D, #3c49bd);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        transition: all 0.4s ease 0s;
+    }
+
+.maincolorButton {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .25em;
+    cursor: pointer;
+    transition: background .8s ease;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #AE111B, #FBC22D, #3c49bd);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 0.4s ease 0s;
+    background: url(http://static.colourlovers.com/uploads/images/4/44/44982.pic.jpg) repeat-y;
+    -webkit-background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 10s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+    margin-bottom:15%;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: -200% 50%;
+    }
+
+    100% {
+        background-position: 250% 50%;
+    }
+
+    0% {
+        background-position: -100% 50%;
+    }
+}
+
+.mainLabel {
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.subLabel {
+    font-size: 1.8vh;
+    cursor: pointer;
+}
+
+.bodyDiv {
+    width: 25%;
+    text-align: center;
+}
+
+.youtubevod {
+    width: 100%;
+    height: 50vh;
+    display: inline-block;
+}
+
+iframe {
+    width: 100%;
+}
+
+.viddiv {
+    left: 25%;
+    width: 75%;    
+}
+
+.twitchdiv{
+    left:0;
+    width:100%;
+}
+
+#twitchframe {
+    height: 60%;
+}
+
+.ytdiv {
+    top: 60vh;
+}
+
+#twitterDiv{
+    width:25%;
+    position:absolute;
+    top:60vh;
+    z-index:1;
+}
+
+.debateDiv {
+    position: absolute;
+    top: 60vh;
+    z-index: 1;
+    left: 20%;
+    width: 20%;
+    background-color: rgba(0,0,0,.5);
+    display:none;
+    /*  background-image: url(charcoalbg.png);
+    background-repeat: repeat;
+    background-size: contain;*/
+}
+
+.debatebox{
+    width:100%;
+    position:relative;
+}
+
+.debateimg{
+    width:75%;
+}
+
+.debatename{
+    width:100%;
+    font-size:3vh !important;
+}
+
+.defeated {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #twitterDiv {
+        display: none;
+    }
+
+    .viddiv {
+        width: 100%;
+        left: 10%;
+    }
+
+    .linkheader {
+        width: 20%;
+    }
+
+    .mainLabel {
+        font-size: 1.5vh;
+    }
+
+    .subLabel{
+        font-size:1vh;
+    }
+
+    #twitchframe {
+        height: 100%;
+    }
+
+    .youtubevod {
+        height: 30vh;
+    }
+
+    .ytdiv {
+        top: 30vh;
+    }
+
+    .linkheaderdiv {
+        margin-bottom: 40%;
+    }
+
+    .maincolorButton{
+        margin-bottom:40%;
+    }
+
+    .twitchdiv {
+        width: 100%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-device-height: 480px) {
+    #twitterDiv {
+        display: none;
+    }
+
+    .viddiv {
+        width: 100%;
+        left: 10%;
+    }
+
+    .linkheader {
+        width: 20%;
+    }
+
+    .mainLabel {
+        font-size: 1.8vh;
+    }
+
+    #twitchframe {
+        height: 100%;
+    }
+
+    .youtubevod {
+        height: 70vh;
+    }
+
+    .ytdiv {
+        top: 90vh;
+    }
+
+    .linkheaderdiv {
+        margin-bottom: 15%;     
+    }
+
+    .subheader {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .twitchdiv {
+        width: 100%;
+        left: 10%;
+    }
+}
