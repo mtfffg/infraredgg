@@ -209,6 +209,7 @@ iframe {
 .debatebox{
     width:100%;
     position:relative;
+    cursor:pointer;
 }
 
 .debateimg{
@@ -242,7 +243,7 @@ iframe {
     }
 
     .mainLabel {
-        font-size: 1.5vh;
+        font-size: 1.3vh;
     }
 
     .subLabel{

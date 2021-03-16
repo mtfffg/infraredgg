@@ -40,7 +40,7 @@
 </head>
 <body>
     <div class="linkheader">
-        <a class="linkheaderdiv maincolorButton" onclick="location.reload();" title="press ESC for fun">
+        <a class="linkheaderdiv maincolorButton mainGlobe" title="Press this for fun">
             <div>
                 <img class="logogif" src="globe.gif" />
                 <br />
@@ -102,8 +102,11 @@
     </div>
     <div class="bodyContainer">
         <div class="bodyDiv" id="twitterDiv">
-            <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/ShowInfrared?ref_src=twsrc%5Etfw">Tweets by ShowInfrared</a>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=FREEINFRARED&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-show-count="false">Tweet #FREEINFRARED</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <!--<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/ShowInfrared?ref_src=twsrc%5Etfw">Tweets by ShowInfrared</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
         </div>
         <div class="bodyDiv">
             <!--<div name="iframe" style="width:100%; height:635px; border:2px solid grey; overflow:hidden">
@@ -124,71 +127,81 @@
         </div>
         <div class="bodyDiv debateDiv" style="position:absolute; height:575vh; text-align:center;">
             <label class="maincolorButton mainLabel">DEBATE LIST</label>
-            <div class="debatebox">
+            <div class="debatebox" data-id="1">
                 <img class="debateimg" src="infrareddebates/biden.jpg" /><br /><br />
                 <label class="debatename maincolorButton">BIDEN</label>
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="2">
                 <img class="debateimg" src="infrareddebates/aoc.jpg" /><br /><br />
                 <label class="debatename maincolorButton">AOC</label>
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="3">
                 <img class="debateimg" src="infrareddebates/thoughtslime.png" /><br /><br />
                 <label class="debatename maincolorButton">THOUGHTSLIME</label>
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="4">
                 <img class="debateimg" src="infrareddebates/Vaush.jpg" /><br /><br />
                 <label class="debatename maincolorButton">VAUSH</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="5">
                 <img class="debateimg" src="infrareddebates/destiny.jpg" /><br /><br />
                 <label class="debatename maincolorButton">DESTINY</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="6">
                 <img class="debateimg" src="infrareddebates/fellowtraveler.jpg" /><br /><br />
                 <label class="debatename maincolorButton">FELLOW TRAVELER</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="7">
+                <img class="debateimg" src="infrareddebates/jolah.jpg" /><br /><br />
+                <label class="debatename maincolorButton">JOLAH</label>
+                <img class="defeated" src="infrareddebates/redX.png" />
+            </div>
+            <div class="debatebox" data-id="8">
                 <img class="debateimg" src="infrareddebates/leftismtoday.jpg" /><br /><br />
                 <label class="debatename maincolorButton">LEFTISM TODAY</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="9">
                 <img class="debateimg" src="infrareddebates/socialismdoneleft.png" /><br /><br />
                 <label class="debatename maincolorButton">SOCIALISM DONE LEFT</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="10">
                 <img class="debateimg" src="infrareddebates/xanderthal.jpg" /><br /><br />
                 <label class="debatename maincolorButton">XANDERTHAL</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="11">
                 <img class="debateimg" src="infrareddebates/kevinlogan.jpg" /><br /><br />
                 <label class="debatename maincolorButton">KEVIN LOGAN</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="12">
                 <img class="debateimg" src="infrareddebates/dylanburns.jpg" /><br /><br />
                 <label class="debatename maincolorButton">DYLAN BURNS TV</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="13">
                 <img class="debateimg" src="infrareddebates/sondsol.png" /><br /><br />
                 <label class="debatename maincolorButton">SONDSOL</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
             </div>
-            <div class="debatebox">
+            <div class="debatebox" data-id="14">
                 <img class="debateimg" src="infrareddebates/leftypol.jpg" /><br /><br />
                 <label class="debatename maincolorButton">LEFTYPOL</label>
                 <img class="defeated" src="infrareddebates/redX.png" />
-            </div>          
+            </div>
         </div>
         <div class="bodyDiv viddiv ytdiv" style="position:absolute; height:700vh; text-align:left;">
-            <div class="youtubevod risingDiv" style="display:none;"><img src="https://j.gifs.com/r8KJLk.gif" style="width:100%;" /></div>            
+            <audio id="fightsong" controls style="display:none;">
+                <source src="infraredsong.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="youtubevod risingDiv" style="display:none;"><img src="https://j.gifs.com/r8KJLk.gif" style="width:100%;" /></div>
+            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jwyqM8VcHR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xYD3h-j9l0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7gG6zzHy48w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/pbu-AAlqDJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -196,16 +209,11 @@
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LhooFz-Tfz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/D7zWbYEIh98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/E4jFl0qrpQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jwyqM8VcHR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/49yjvpegVDA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZqWXpMFhc0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </div>
-
-    <audio id="fightsong" style="display:none;">        
-        <source src="infraredsong.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+ 
 </body>
 </html>
 
