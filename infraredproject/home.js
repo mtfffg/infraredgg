@@ -25,47 +25,79 @@ $('.mainGlobe').click(function () {
 });
 
 $('.debatebox').click(function () {
-    var id = $(this).data('id');
+    var id = $(this).data('id');    
+    var open = false;
+    var modalbody = '';
+    var modaltitle = '';
 
     switch (id) {
         case 4://vaush
-            window.open(
-                "https://www.youtube.com/watch?v=T-djYWAhrnM", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS VAUSH';            
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/T-djYWAhrnM" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';                   
             break;
         case 5://destiny
-            window.open(
-                "https://www.youtube.com/watch?v=HB55g2kunNU", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS DESTINY';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/HB55g2kunNU" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
             break;
         case 6://fellow traveler
-            window.open(
-                "https://www.youtube.com/watch?v=AM838wusAmQ", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS FELLOW TRAVELER';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/AM838wusAmQ" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
             break;
         case 7://jolah
-            window.open(
-                "https://www.youtube.com/watch?v=Mml7rXLQoTQ", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS JOLAH';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/Mml7rXLQoTQ" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
             break;
         case 8://leftism today
-            window.open(
-                "https://www.youtube.com/watch?v=mDM2ojVYdrw", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS LEFTISM TODAY';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/mDM2ojVYdrw" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';            
             break;
         case 9://socialism done left
-            window.open(
-                "https://www.youtube.com/watch?v=xIlceNoYvGs", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS SOCIALISM DONE LEFT';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/xIlceNoYvGs" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';            
             break;
         case 10://xanderthal
-            window.open(
-                "https://www.youtube.com/watch?v=FFsIPOuOBg4", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS XANDERTHAL';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/FFsIPOuOBg4" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';            
             break;
         case 11://kevin logan
-            window.open(
-                "https://www.youtube.com/watch?v=CitM_kAZ_9M", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS KEVIN LOGAN';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/CitM_kAZ_9M" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';            
             break;
         case 12://dylan burns tv and sondsol
         case 13:
-            window.open(
-                "https://www.youtube.com/watch?v=7UpCH57lcbQ", "_blank");
+            open = true;
+            modaltitle = 'INFRARED VS DYLAN BURNS TV & SONDSOL';
+            modalbody = '<div class="youtubevod" style="height:75vh;"><iframe width="100%" height="100%" src="https://invidious.snopyta.org/embed/7UpCH57lcbQ" frameborder="0" allow="accelerometer;' +
+                ' autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';            
             break;
     }
+
+    if (open) {
+        $('.debatevidBody').empty();
+        $('.debatevidTitle').text(modaltitle);
+        $('.debatevidBody').append(modalbody);            
+        $('#debatevidModal').modal('show');
+    }
+});
+
+$('.modaldebateClose').click(function () {
+    $('.debatevidBody').empty();
 });
 
 //$('.linkheader').mouseover(function () {
