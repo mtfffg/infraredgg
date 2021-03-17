@@ -5,3 +5,7 @@ youtube videos
 
 calendar for debates and schedule
 apointment form for debates
+
+only show twitch player if online, other show offline image
+
+

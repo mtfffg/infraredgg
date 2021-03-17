@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="home.css?v=2" />
+    <link rel="stylesheet" href="home.css?v=3" />
     <meta charset="utf-8">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,6 +40,8 @@
     <meta http-equiv="Expires" content="0" />
 </head>
 <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
     <div class="linkheader">
         <a class="linkheaderdiv maincolorButton mainGlobe" title="Press this for fun">
             <div>
@@ -61,7 +63,7 @@
             </a>
             <a class="linkheaderdiv colorButton subheader" href="https://www.youtube.com/c/InfraredShow" target="_blank">
                 <div>
-                    <img class="headerlinklogo" style="width:40%;" src="youtubelogo.png" />
+                    <img class="headerlinklogo" src="youtubelogo.png" />
                 </div>
                 <div>
                     <label class="subLabel">YOUTUBE</label>
@@ -85,7 +87,7 @@
             </a>
             <a class="linkheaderdiv colorButton subheader" href="https://www.reddit.com/r/ShowInfrared/" target="_blank">
                 <div>
-                    <img class="headerlinklogo" src="redditlogo2.png" />
+                    <img class="headerlinklogo" src="redditlogo.png" />
                 </div>
                 <div>
                     <label class="subLabel">REDDIT</label>
@@ -110,121 +112,131 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
         </div>
         <div class="bodyDiv">
-            <!--<div name="iframe" style="width:100%; height:635px; border:2px solid grey; overflow:hidden">
-                <iframe src="https://www.youtube.com/c/InfraredShow/videos" style="width:100%; height:700px; margin-top: -65px" scrolling="true">
-                    If you can see this, your browser doesn't support iframes.
-                </iframe>
-            </div>-->
-        </div>
-        <div class="bodyDiv">
             <div class="twitchdiv" style="padding: 56.25% 0px 0px; position: absolute; top:0; display:block; height:0;">
                 <iframe id="twitchframe" src="https://player.twitch.tv/?autoplay=true&channel=infraredshow&parent=www.infrared.gg"
                         frameborder="0" allow="accelerometer; autoplay; muted; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="auto" autoplay muted
                         style="position: absolute; top: 0px; left: 0px; width: 100%;"></iframe>
-                <!--<iframe id="twitchframe" src="https://www.twitch.tv/embed/infraredshow/chat?parent=www.infrared.gg"
-                        frameborder="0" allow="accelerometer; autoplay; muted; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="auto" autoplay muted
-                        style="position: absolute; top: 0px; left: 0px; width: 100%;"></iframe>-->
             </div>
         </div>
         <div class="bodyDiv debateDiv" style="position:absolute; height:575vh; text-align:center;">
-            <label class="maincolorButton mainLabel">DEBATE LIST</label>
-            <div class="debatebox" data-id="1">
-                <img class="debateimg" src="infrareddebates/biden.jpg" /><br /><br />
-                <label class="debatename maincolorButton">BIDEN</label>
-            </div>
-            <div class="debatebox" data-id="2">
-                <img class="debateimg" src="infrareddebates/aoc.jpg" /><br /><br />
-                <label class="debatename maincolorButton">AOC</label>
-            </div>
-            <div class="debatebox" data-id="3">
-                <img class="debateimg" src="infrareddebates/thoughtslime.png" /><br /><br />
-                <label class="debatename maincolorButton">THOUGHTSLIME</label>
-            </div>
-            <div class="debatebox" data-id="4">
-                <img class="debateimg" src="infrareddebates/Vaush.jpg" /><br /><br />
-                <label class="debatename maincolorButton">VAUSH</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="5">
-                <img class="debateimg" src="infrareddebates/destiny.jpg" /><br /><br />
-                <label class="debatename maincolorButton">DESTINY</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="6">
-                <img class="debateimg" src="infrareddebates/fellowtraveler.jpg" /><br /><br />
-                <label class="debatename maincolorButton">FELLOW TRAVELER</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="7">
-                <img class="debateimg" src="infrareddebates/jolah.jpg" /><br /><br />
-                <label class="debatename maincolorButton">JOLAH</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="8">
-                <img class="debateimg" src="infrareddebates/leftismtoday.jpg" /><br /><br />
-                <label class="debatename maincolorButton">LEFTISM TODAY</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="9">
-                <img class="debateimg" src="infrareddebates/socialismdoneleft.png" /><br /><br />
-                <label class="debatename maincolorButton">SOCIALISM DONE LEFT</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="10">
-                <img class="debateimg" src="infrareddebates/xanderthal.jpg" /><br /><br />
-                <label class="debatename maincolorButton">XANDERTHAL</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="11">
-                <img class="debateimg" src="infrareddebates/kevinlogan.jpg" /><br /><br />
-                <label class="debatename maincolorButton">KEVIN LOGAN</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="12">
-                <img class="debateimg" src="infrareddebates/dylanburns.jpg" /><br /><br />
-                <label class="debatename maincolorButton">DYLAN BURNS TV</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="13">
-                <img class="debateimg" src="infrareddebates/sondsol.png" /><br /><br />
-                <label class="debatename maincolorButton">SONDSOL</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
-            <div class="debatebox" data-id="14">
-                <img class="debateimg" src="infrareddebates/leftypol.jpg" /><br /><br />
-                <label class="debatename maincolorButton">LEFTYPOL</label>
-                <img class="defeated" src="infrareddebates/redX.png" />
-            </div>
+
         </div>
         <div class="bodyDiv viddiv ytdiv" style="position:absolute; height:700vh; text-align:left;">
-            <audio id="fightsong" controls style="display:none;">
-                <source src="infraredsong.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <div class="youtubevod risingDiv" style="display:none;"><img src="https://j.gifs.com/r8KJLk.gif" style="width:100%;" /></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jwyqM8VcHR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xYD3h-j9l0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7gG6zzHy48w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/pbu-AAlqDJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/urawVQf9oSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LhooFz-Tfz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/D7zWbYEIh98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/E4jFl0qrpQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/49yjvpegVDA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZqWXpMFhc0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/jwyqM8VcHR0"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/jwyqM8VcHR0?autoplay=1><img src=https://img.youtube.com/vi/jwyqM8VcHR0/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/xYD3h-j9l0Q"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/xYD3h-j9l0Q?autoplay=1><img src=https://img.youtube.com/vi/xYD3h-j9l0Q/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">                
+                <iframe width="100%"
+                        height="100%"
+                        src="https://yewtu.be/embed/7gG6zzHy48w"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://yewtu.be/embed/7gG6zzHy48w><img src=https://img.youtube.com/vi/7gG6zzHy48w/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/pbu-AAlqDJg"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/pbu-AAlqDJg?autoplay=1><img src=https://img.youtube.com/vi/pbu-AAlqDJg/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://yewtu.be/embed/urawVQf9oSE"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://yewtu.be/embed/urawVQf9oSE><img src=https://img.youtube.com/vi/urawVQf9oSE/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/LhooFz-Tfz8"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/LhooFz-Tfz8?autoplay=1><img src=https://img.youtube.com/vi/LhooFz-Tfz8/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/D7zWbYEIh98"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/D7zWbYEIh98?autoplay=1><img src=https://img.youtube.com/vi/D7zWbYEIh98/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/E4jFl0qrpQA"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/E4jFl0qrpQA?autoplay=1><img src=https://img.youtube.com/vi/E4jFl0qrpQA/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/49yjvpegVDA"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/49yjvpegVDA?autoplay=1><img src=https://img.youtube.com/vi/49yjvpegVDA/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="youtubevod">
+                <iframe width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/ZqWXpMFhc0Y"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/ZqWXpMFhc0Y?autoplay=1><img src=https://img.youtube.com/vi/ZqWXpMFhc0Y/hqdefault.jpg alt='Infrared Video'><span>▶</span></a>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+
+            <!--<div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jwyqM8VcHR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xYD3h-j9l0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7gG6zzHy48w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/pbu-AAlqDJg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/urawVQf9oSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LhooFz-Tfz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/D7zWbYEIh98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/E4jFl0qrpQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/49yjvpegVDA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="youtubevod"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZqWXpMFhc0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
         </div>
     </div>
 
     <div id="debatevidModal" class="modal fade" role="dialog" data-backdrop="static" style="text-align:center;">
-        <div class="modal-dialog" style="width:100%;">       
+        <div class="modal-dialog" style="width:100%;">
             <div class="modal-content" style="background-color: rgba(0,0,0,.5);">
                 <div class="modal-header">
                     <button type="button" class="close modaldebateClose" data-dismiss="modal" style="color:crimson; font-size:5vh; opacity:1;">&times;</button>
                     <h1 class="modal-title debatevidTitle maincolorButton" style="font-size:3vh; margin-bottom:0;"></h1>
                 </div>
                 <div class="debatevidBody modal-body">
-                    
-                </div>              
+
+                </div>
             </div>
 
         </div>
@@ -235,5 +247,4 @@
 
 <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="bootstrap.min.js"></script>
-<script type="text/javascript" src="home.js?v=2"></script>
-<!--<script src='https://redditjs.com/subreddit.js' data-subreddit='showinfrared' data-height='400' data-width='330' data-sort='hot' data-theme='dark' data-subreddit-mode='small'></script>-->
+<script type="text/javascript" src="home.js?v=3"></script>

@@ -7,7 +7,7 @@
 
 body {
     background-color: #444;
-    background-image: url(4kbg.jpg);
+  /*  background-image: url(4kbg.jpg);*/
     background-repeat: repeat;
     background-size: auto;
     font-family: gotham_blackregular;
@@ -19,6 +19,78 @@ body {
     background-size: 10px 10px, 10px 10px, 10px 5px;
     background-position: 0px 0px, 5px 5px, 0px 0px;*/
 }
+
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.stars, .twinkling{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
+}
+
+.twinkling {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index: 0;
+    -moz-animation: move-twink-back 200s linear infinite;
+    -ms-animation: move-twink-back 200s linear infinite;
+    -o-animation: move-twink-back 200s linear infinite;
+    -webkit-animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 200s linear infinite;
+}
+
 
 .linkheader {
     position: fixed;
@@ -57,7 +129,7 @@ body {
 }
 
 .headerlinklogo {
-    width: 30%;
+    width: 20%;
 }
 
 .colorButton {
@@ -77,6 +149,7 @@ body {
     transition: background .8s ease;
     text-transform: uppercase;
     background-color: transparent;
+    display:block;
 }
 
     .colorButton:hover {
@@ -228,6 +301,12 @@ iframe {
     top: 10%;
 }
 
+.play-youtube-video {
+    width: 75%;
+    height: 100%;
+    margin-left:12.5%;
+}
+
 @media only screen and (max-device-width: 480px) {
     #twitterDiv {
         display: none;
@@ -274,6 +353,10 @@ iframe {
         width: 100%;
         left: 10%;
     }
+
+    .headerlinklogo {
+        width: 30%;
+    }
 }
 
 @media only screen and (max-device-height: 480px) {
@@ -318,5 +401,9 @@ iframe {
     .twitchdiv {
         width: 100%;
         left: 10%;
+    }
+
+    .headerlinklogo {
+        width: 30%;
     }
 }
