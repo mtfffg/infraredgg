@@ -112,7 +112,7 @@ https://mkrtchyan.ga
 }
 
 .linkheaderdiv {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     transform: rotate3d(-40, 100, 0, 10deg)
 }
 
@@ -217,12 +217,12 @@ https://mkrtchyan.ga
 }
 
 .mainLabel {
-    font-size: 3vh;
+    font-size: 2vw;
     cursor: pointer;
 }
 
 .subLabel {
-    font-size: 1.8vh;
+    font-size: 1vw;
     cursor: pointer;
 }
 
